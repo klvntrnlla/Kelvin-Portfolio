@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kelvin's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/> 
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Kelvin's<span> Portfolio</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="glow-text">Kelvin John C. Tornilla</span></h1>
+      <p id="typed-text"></p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/kilben12.png" alt="Profile Picture" class="profile-img glow-border"/>
+       <div class="about-text">
+        <p>I am a passionate BSIT student on an exciting journey of discovery in the world of technology and programming. As someone who is just beginning to explore the vast landscape of software development, I approach every challenge with curiosity and determination to learn.</p>
+
+        <p>Currently, I'm building my foundation in several programming languages. While I'm still getting comfortable with Java, I've been making steady progress with Python and C#. Python has quickly become my favorite programming language.</p>
+
+        <h3>Future Aspirations</h3>
+        <p>My ultimate career goal is to specialize in cybersecurity. In our increasingly digital world, protecting systems and data has become more critical than ever. I'm fascinated by the challenge of staying ahead of security threats and building robust defenses that keep organizations and individuals safe.</p>
+
+        <p>I believe that my current programming foundation will serve as a strong stepping stone toward this goal, as understanding how systems work is essential to securing them effectively.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card" onclick="openLightbox('lightbox1')">
+        <img src="images/Project1.jpg" alt="Tic-Tac-Toe Game" class="project-img"/>
+        <div class="project-info">
+          <h3>Tic-Tac-Toe Game with Login</h3>
+          <p>A simple yet fun tic-tac-toe game where players can create an account and log in using a username and password. After logging in, users can play against another player or AI.</p>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openLightbox('lightbox2')">
+        <img src="images/Project2.jpg" alt="Soma's Restaurant" class="project-img"/>
+        <div class="project-info">
+          <h3>Soma's Family Restaurant</h3>
+          <p>An online store for Soma's Family Restaurant where users can view daily menus, place orders, calculate total costs, and make online payments.</p>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openLightbox('lightbox3')">
+        <img src="images/Project3.jpg" alt="Match-Up Game" class="project-img"/>
+        <div class="project-info">
+          <h3>Memory Match Game</h3>
+          <p>In this mobile-friendly memory game, players flip over cards two at a time, aiming to match pairs. Inspired by Oliver Kocsis' Match Up, the game ends when all cards have been matched successfully.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="lightbox" id="lightbox1">
+      <div class="lightbox-content">
+        <span class="close-lightbox" onclick="closeLightbox('lightbox1')">&times;</span>
+        <img src="images/Project1.jpg" alt="Project 1"/>
+        <h3>Tic-Tac-Toe Game with Login</h3>
+        <p>This project includes a login system. Players can register, log in, and enjoy playing the game with friends or AI opponents.</p>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox2">
+      <div class="lightbox-content">
+        <span class="close-lightbox" onclick="closeLightbox('lightbox2')">&times;</span>
+        <img src="images/Project2.jpg" alt="Project 2"/>
+        <h3>Soma's Family Restaurant Online Store</h3>
+        <p>This web app allows customers to browse the restaurant's menu, select meals, calculate totals, and pay online.</p>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox3">
+      <div class="lightbox-content">
+        <span class="close-lightbox" onclick="closeLightbox('lightbox3')">&times;</span>
+        <img src="images/Project3.jpg" alt="Project 3"/>
+        <h3>Memory Match Game</h3>
+        <p>In this mobile-friendly memory game, players flip over cards two at a time, aiming to match pairs. The game ends when all cards have been matched successfully.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+
+      <div class="skill">
+        <i class="fab fa-html5 fa-2x"></i>
+        <h3>HTML & CSS</h3>
+        <p>I'm currently learning the basics of HTML and CSS. I enjoy building simple layouts and styling them creatively.</p>
+      </div>
+
+      <div class="skill">
+        <i class="fab fa-js fa-2x"></i>
+        <h3>JavaScript</h3>
+        <p>I have basic knowledge of JavaScript and how it brings interactivity to websites. Looking forward to improving through practice.</p>
+      </div>
+
+      <div class="skill">
+        <i class="fab fa-java fa-2x"></i>
+        <h3>Java</h3>
+        <p>Java was the first language I learned. I understand object-oriented programming and syntax fundamentals.</p>
+      </div>
+
+      <div class="skill">
+        <i class="fab fa-python fa-2x"></i>
+        <h3>Python</h3>
+        <p>Python is my favorite language so far. It's clean, readable, and easy to learn — perfect for scripting and automation.</p>
+      </div>
+
+      <div class="skill">
+        <i class="fab fa-cuttlefish fa-2x"></i>
+        <h3>C#</h3>
+        <p>I'm currently exploring C# for .NET development and Unity game creation. Still at beginner level but eager to grow.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+      <a>
+        <i class="fas fa-at fa-2x"></i>
+      </a>
+      <a href="https://www.facebook.com/kilbentrnlla"  target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/not.ke1vin/"  target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://github.com/klvntrnlla"  target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kelvin. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
